@@ -1,0 +1,10 @@
+cffi==1.14.2
+numpy==1.19.1
+pandas==1.1.1
+pkgconfig==1.5.1
+pycparser==2.20
+python-dateutil==2.8.1
+pytz==2020.1
+pyvips==2.1.12
+six==1.15.0
+-e git+https://github.com/lucasrla/wsi-tile-cleanup@master#egg=wsi-tile-cleanup

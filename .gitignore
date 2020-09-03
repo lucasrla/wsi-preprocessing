@@ -1,0 +1,16 @@
+# mine
+_/
+RESEARCH.md
+TODOs.md
+.python-version
+.vscode/
+
+# python
+__pycache__/
+*.pyc
+
+# large image files
+*.svs
+
+# ignore poetry.lock in this repo
+poetry.lock
