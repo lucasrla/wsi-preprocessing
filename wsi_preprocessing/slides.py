@@ -14,7 +14,7 @@ def list_slides(slides_dir, glob_pattern="*.svs"):
     return slides
 
 
-def save_slides_mpp_otsu(slides, csv_fname, mpp_key="openslide.mpp-x"):
+def save_slides_mpp_otsu(slides, csv_fname, mpp_key="openslide.mpp-x", level=2):
     d = {}
     d["slide_path"] = []
 
@@ -34,7 +34,7 @@ def save_slides_mpp_otsu(slides, csv_fname, mpp_key="openslide.mpp-x"):
 
         print(f"- finding slide resolution")
 
-        vi = utils.read_image(file, access="sequential", level=2)
+        vi = utils.read_image(file, access="sequential", level=level)
 
         try:
             # TODO: generalize the mpp_key?
